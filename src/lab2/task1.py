@@ -24,3 +24,11 @@ class Rectangle:
         if new_width > 0 and new_width < self.MAX_SIZE:
             self._width = new_width
         raise ValueError("Error: width have to be greater than 0 and less than 20.")
+
+    @property
+    def perimeter(self) -> int | float:
+        return 2 * (self._length + self._width)
+
+    @property
+    def area(self) -> int | float:
+        return self._length * self._width
