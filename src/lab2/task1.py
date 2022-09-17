@@ -13,7 +13,7 @@ class Rectangle:
     def length(self, new_length: int | float) -> None:
         if new_length > 0 and new_length < self.MAX_SIZE:
             self._length = new_length
-        raise ValueError("Error: length have to be greater than 0 and less than 20.")
+        raise ValueError(f"Error: length have to be greater than 0 and less than {self.MAX_SIZE}.")
 
     @property
     def width(self) -> int | float:
@@ -23,7 +23,7 @@ class Rectangle:
     def width(self, new_width: int | float) -> int | float: 
         if new_width > 0 and new_width < self.MAX_SIZE:
             self._width = new_width
-        raise ValueError("Error: width have to be greater than 0 and less than 20.")
+        raise ValueError(f"Error: width have to be greater than 0 and less than {self.MAX_SIZE}.")
 
     @property
     def perimeter(self) -> int | float:
