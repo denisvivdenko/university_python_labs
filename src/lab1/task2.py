@@ -8,5 +8,5 @@ if __name__ == "__main__":
     parser.add_argument("number_1", type=int)
     parser.add_argument("number_2", type=int)
     args = parser.parse_args()
-    operation = getattr(operator, args.operation)
-    print(operation(args.number_1, args.number_2))
+    apply_fuction = getattr(operator, args.operation)
+    print(apply_fuction(args.number_1, args.number_2))
